@@ -73,10 +73,5 @@
             <artifactId>json</artifactId>
             <version>20210307</version> <!-- Or the latest version -->
         </dependency>
-        <dependency>
-        	<groupId>com.nagarro.selenium</groupId>
-        	<artifactId>Selenium</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 </project>
