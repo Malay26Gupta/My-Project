@@ -33,15 +33,6 @@ pipeline {
         }
       }
     }
-
-    stage('Cleanup')
-    {
-      steps
-      {
-        //clean up temporary files or directories
-        sh 'rm -rf target'
-      }
-    }
   }
 }
       
