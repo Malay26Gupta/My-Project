@@ -8,7 +8,7 @@ pipeline {
       steps
       {
         //checkout source code from repository
-        
+        echo 'hello'
 
         //build application using maven
         bat 'mvn clean install'
