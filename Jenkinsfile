@@ -1,6 +1,6 @@
 pipeline {
   agent any
-
+  checkout 
   stages
   {
     stage('Build')
@@ -8,10 +8,10 @@ pipeline {
       steps
       {
         //checkout source code from repository
-        checkout scm
+        
 
         //build application using maven
-        sh 'mvn clean package'
+        bat 'mvn clean'
       }
     }
 
@@ -20,7 +20,7 @@ pipeline {
       steps
       {
         //execute demo test cases
-        sh 'mvn test'
+        bat 'mvn test'
 
         //check if any test failed
         script
