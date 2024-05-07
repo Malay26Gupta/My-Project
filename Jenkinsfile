@@ -11,7 +11,7 @@ pipeline {
         
 
         //build application using maven
-        bat 'mvn clean'
+        bat 'mvn clean install'
       }
     }
 
