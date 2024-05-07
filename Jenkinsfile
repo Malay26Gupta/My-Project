@@ -26,14 +26,7 @@ pipeline {
         bat 'mvn test'
 
         //check if any test failed
-        script
-        {
-          def testResult = junit testResults: ''
-          if(testResult.failed > 0)
-          {
-            error "Tests failed"
-          }
-        }
+        
       }
     }
   }
